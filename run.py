@@ -193,8 +193,8 @@ def login():
     clear()
     user = "ARXU"
     passwd = "RX"
-    username = input("</> Username: ")
-    password = getpass.getpass(prompt='</> Password: ')
+    username = input("</> Username💀: ")
+    password = getpass.getpass(prompt='</> Password🥸: ')
     if username != user or password != passwd:
         print("")
         print("Password or Username is invalid?? You have to buy subscriptions from Our channel")        
